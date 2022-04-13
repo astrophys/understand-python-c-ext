@@ -7,13 +7,13 @@ Python
 
 
 
-## Installation and Dependencies :
+## Dependencies :
 1. A modern C compiler
 2. Get a copy of this code.
 3. Python-3.X
 
 
-## Installation: 
+## Installation and Running :
 1. Create a new virtual environment for testing
 ```
 $ python3 -m venv /path/to/new/virtualenv/py-ext-test
@@ -26,6 +26,12 @@ $ source /path/to/new/virtualenv/py-ext-test/bin/activate
 ```
 $ cd src
 $ python setup.py install
+```
+4. Run the code
+```
+>>> import hellopymod
+>>> hellopymod.hello_py_func("Bob")
+Hello Bob!
 ```
 
 ## Discussion : 
