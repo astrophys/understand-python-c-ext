@@ -15,9 +15,13 @@ Python
 
 ## Installation: 
 1. Create a new virtual environment for testing
-```$ python3 -m venv /path/to/new/virtualenv/py-ext-test```
+```
+$ python3 -m venv /path/to/new/virtualenv/py-ext-test
+```
 2. Activate Environment 
-```$ source /path/to/new/virtualenv/py-ext-test/bin/activate```
+```
+$ source /path/to/new/virtualenv/py-ext-test/bin/activate
+```
 3. Install Source
 ```
 $ cd src
