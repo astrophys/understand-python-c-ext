@@ -40,6 +40,11 @@ compile the C-code directly into a shared library. I was having a bit of difficu
 doing that, so instead the `setup.py` method is used.  
 
 
+## Questions
+1. In PyObject * add_c_func(), How is a value assigned to a or by even when no memory has
+   been allocated
+
+
 ## References
 1. [Extending Python with C or C++](https://docs.python.org/3/extending/extending.html)
 2. [Inspirational Example by lucasea777](https://gist.github.com/lucasea777/8801440f6b622edd3553c8a7304bf94e)
