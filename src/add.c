@@ -18,16 +18,15 @@ static PyObject * add_c_func(PyObject *self, PyObject *args)
 {
     int a=0;
     int b=0;
+    int c=0;
 
-    //printf("%s", args);
-
-    // How does it write to the pointer
-    if (!PyArg_ParseTuple(args, "ii", &a, &b))
+    // This determines the number arguments used by add_c_func
+    if (!PyArg_ParseTuple(args, "iii", &a, &b, &c))
     {
         return NULL;
     }
     
-    printf("%i\n", a+b);
+    printf("%i\n", a+b+c);
 
     Py_RETURN_NONE;
 }
@@ -35,7 +34,7 @@ static PyObject * add_c_func(PyObject *self, PyObject *args)
 
 // This defines the function used by 
 static PyMethodDef AddMethods[] = {
-    {"add_py_func", add_c_func, METH_VARARGS, "Add two numbers."},
+    {"add_py_func", add_c_func, METH_VARARGS, "Add three numbers."},
     {NULL, NULL, 0, NULL}
 };
 
